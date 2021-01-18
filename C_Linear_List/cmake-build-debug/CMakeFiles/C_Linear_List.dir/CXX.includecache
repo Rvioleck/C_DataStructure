@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/DataStructure/DataStructure/C_Linear_List/SequenceListStaticAlloc.h
+stdio.h
+-
+
+D:/DataStructure/DataStructure/C_Linear_List/SequenceListStaticWorks.cpp
+SequenceListStaticAlloc.h
+D:/DataStructure/DataStructure/C_Linear_List/SequenceListStaticAlloc.h
+

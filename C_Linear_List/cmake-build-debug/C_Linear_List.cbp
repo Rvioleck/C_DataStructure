@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="C_Linear_List"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="C_Linear_List">
+				<Option output="D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/C_Linear_List.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 C_Linear_List"/>
+					<CompileFile command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="C_Linear_List/fast">
+				<Option output="D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/C_Linear_List.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw-w64/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 C_Linear_List/fast"/>
+					<CompileFile command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw-w64/mingw32/bin/mingw32-make.exe -f &quot;D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LinkListWithHead.h">
+			<Option target="C_Linear_List"/>
+		</Unit>
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LinkListWithoutHead.h">
+			<Option target="C_Linear_List"/>
+		</Unit>
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/SequenceListStaticWorks.cpp">
+			<Option target="C_Linear_List"/>
+		</Unit>
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
