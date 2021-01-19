@@ -11,6 +11,10 @@ stdio.h
 -
 
 D:/DataStructure/DataStructure/C_Linear_List/SequenceListStaticWorks.cpp
+cstdlib
+-
+cstring
+-
 SequenceListStaticAlloc.h
 D:/DataStructure/DataStructure/C_Linear_List/SequenceListStaticAlloc.h
 

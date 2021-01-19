@@ -296,7 +296,7 @@ int main() {
 //    ShowList(L1);
 
     /// minValueOfThreeGroups 调试
-    printf("%d", minValueOfThreeGroups_p17q14(L1, L2, L3));
+//    printf("%d", minValueOfThreeGroups_p17q14(L1, L2, L3));
 
     /// findminNumNotInSeqList 调试
 //    printf("%d", findMinNumNotInSeqList_p17q13(L1));
