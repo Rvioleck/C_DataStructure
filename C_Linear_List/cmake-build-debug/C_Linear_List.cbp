@@ -83,9 +83,6 @@
 		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LinkListWithHead.h">
 			<Option target="C_Linear_List"/>
 		</Unit>
-		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LinkListWithoutHead.h">
-			<Option target="C_Linear_List"/>
-		</Unit>
 		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/SequenceListStaticWorks.cpp">
 			<Option target="C_Linear_List"/>
 		</Unit>

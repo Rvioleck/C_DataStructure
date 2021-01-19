@@ -71,3 +71,14 @@ bool LocateElem(SeqList L, ElemType e, int &i){
     return false;
 }
 
+void reverse(SeqList &L, int left, int right){
+    // 翻转L中下标从left到right的元素
+    ElemType temp;
+    while (left < right){
+        temp = L.data[left];
+        L.data[left] = L.data[right];
+        L.data[right] = temp;
+        left++;
+        right--;
+    }
+}
