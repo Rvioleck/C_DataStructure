@@ -117,13 +117,69 @@ SeqList mergeOrderlyTwoSeqListToOne_p17q7(SeqList L1, SeqList L2){
     return L3;
 }
 
+void reverse(SeqList &L, int left, int right){
+    ElemType temp;
+    while (left < right){
+        temp = L.data[left];
+        L.data[left] = L.data[right];
+        L.data[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+void reverse_p17q8(SeqList &L, int x1, int x2){
+    // 交换顺序表L中前x1个元素和x1到x2个元素之间的顺序
+    reverse(L, 0, L.length - 1);
+    reverse(L, 0, x2 - 1);
+    reverse(L, x2, x1 + x2 - 1);
+}
+
+bool findElemOfX(SeqList &L, int x){
+    int low = 0, high = L.length - 1;
+    int mid;
+    while (low < high - 1){
+        mid = (low + high)/2;
+        if (L.data[mid] < x){
+            low = mid;
+        }else if (L.data[mid] > x){
+            high = mid;
+        }else{
+            int temp = L.data[mid];
+            L.data[mid] = L.data[mid + 1];
+            L.data[mid + 1] = temp;
+            return true;
+        }
+    }
+    for (int i = L.length - 1; i >= high; --i) {
+        L.data[i+1] = L.data[i];
+    }
+    L.data[high] = x;
+    L.length++;
+    return false;
+}
+
 int main() {
     SeqList L1;
     InitList(L1);
-    ListInsert(L1, 1, 5);
+    ListInsert(L1, 1, 7);
+    ListInsert(L1, 1, 6);
+    ListInsert(L1, 1, 4);
     ListInsert(L1, 1, 3);
+    ListInsert(L1, 1, 2);
     ListInsert(L1, 1, 1);
     ShowList(L1);
+    if (findElemOfX(L1, 3)){
+        printf("find it!\n");
+    }else{
+        printf("doesn't find it!\n");
+    }
+    ShowList(L1);
+
+
+//    // reverse 调试，x1和x2分别是两个顺序表的大小
+//    reverse_p17q8(L1, 2, 5);
+//    ShowList(L1);
 
 //    // mergeOrderlyTwoSeqListToOne调试
 //    SeqList L2;
