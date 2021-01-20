@@ -11,7 +11,7 @@
 #include <cstdlib>
 
 typedef struct LNode{
-    char data;
+    int data;
     struct LNode* next;
 }LNode, *LinkList;
 
@@ -25,7 +25,7 @@ bool Empty(LinkList L){
     return L==NULL;
 }
 
-bool ListInsert(LinkList &L, int i, char e){
+bool ListInsert(LinkList &L, int i, int e){
     // 按位序i插入元素e，不带头结点
     if (i < 1)
         return false;
@@ -54,8 +54,8 @@ bool ListInsert(LinkList &L, int i, char e){
 void ShowList(LinkList L){
     // 不带头结点的show
     while (L != NULL){
-        printf("%c->", L->data);
+        printf("%d->", L->data);
         L = L->next;
     }
-    printf("NULL");
+    printf("NULL\n");
 }

@@ -142,32 +142,32 @@ C_Linear_List/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/build
 .PHONY : C_Linear_List/fast
 
-SequenceListStaticWorks.obj: SequenceListStaticWorks.cpp.obj
+LinkListWithHeadWorks.obj: LinkListWithHeadWorks.cpp.obj
 
-.PHONY : SequenceListStaticWorks.obj
+.PHONY : LinkListWithHeadWorks.obj
 
 # target to build an object file
-SequenceListStaticWorks.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/SequenceListStaticWorks.cpp.obj
-.PHONY : SequenceListStaticWorks.cpp.obj
+LinkListWithHeadWorks.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.obj
+.PHONY : LinkListWithHeadWorks.cpp.obj
 
-SequenceListStaticWorks.i: SequenceListStaticWorks.cpp.i
+LinkListWithHeadWorks.i: LinkListWithHeadWorks.cpp.i
 
-.PHONY : SequenceListStaticWorks.i
+.PHONY : LinkListWithHeadWorks.i
 
 # target to preprocess a source file
-SequenceListStaticWorks.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/SequenceListStaticWorks.cpp.i
-.PHONY : SequenceListStaticWorks.cpp.i
+LinkListWithHeadWorks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.i
+.PHONY : LinkListWithHeadWorks.cpp.i
 
-SequenceListStaticWorks.s: SequenceListStaticWorks.cpp.s
+LinkListWithHeadWorks.s: LinkListWithHeadWorks.cpp.s
 
-.PHONY : SequenceListStaticWorks.s
+.PHONY : LinkListWithHeadWorks.s
 
 # target to generate assembly for a file
-SequenceListStaticWorks.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/SequenceListStaticWorks.cpp.s
-.PHONY : SequenceListStaticWorks.cpp.s
+LinkListWithHeadWorks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.s
+.PHONY : LinkListWithHeadWorks.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C_Linear_List
-	@echo ... SequenceListStaticWorks.obj
-	@echo ... SequenceListStaticWorks.i
-	@echo ... SequenceListStaticWorks.s
+	@echo ... LinkListWithHeadWorks.obj
+	@echo ... LinkListWithHeadWorks.i
+	@echo ... LinkListWithHeadWorks.s
 .PHONY : help
 
 

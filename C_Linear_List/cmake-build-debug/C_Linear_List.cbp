@@ -83,7 +83,7 @@
 		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LinkListWithHead.h">
 			<Option target="C_Linear_List"/>
 		</Unit>
-		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/SequenceListStaticWorks.cpp">
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LinkListWithHeadWorks.cpp">
 			<Option target="C_Linear_List"/>
 		</Unit>
 		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/CMakeLists.txt">
