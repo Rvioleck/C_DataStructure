@@ -3,4 +3,5 @@
 
 CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.obj: ../LinkListWithHead.h
 CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.obj: ../LinkListWithHeadWorks.cpp
+CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.obj: ../SequenceListStaticAlloc.h
 

@@ -25,8 +25,8 @@ bool InitList(LinkList &L) {
     return true;
 }
 
-bool Empty(LinkList L) {
-    // 清空带头链表
+bool isEmpty(LinkList L) {
+    // 判断是否为空
     return L->next == nullptr;
 }
 
@@ -159,6 +159,29 @@ LinkList HeadInsert(LinkList &L){
         s->next = L->next;
         L->next = s;
         scanf("%c", &x);
+    }
+    return L;
+}
+
+void ShowCList(LinkList L){
+    printf("The Linklist is: ");
+    LNode *p = L;
+    while (p->next != L) {
+        p = p->next;
+        printf("%d->", p->data);
+    }
+    printf("NULL\n");
+}
+
+LinkList toCircleLinkList(LinkList L){
+    if (isEmpty(L)){
+        L->next = L;
+    }else{
+        LNode *cur = L->next;
+        while (cur->next){
+            cur = cur->next;
+        }
+        cur->next = L;
     }
     return L;
 }

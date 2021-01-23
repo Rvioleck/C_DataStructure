@@ -1,4 +1,5 @@
 #include "LinkListWithHead.h"
+#include "SequenceListStaticAlloc.h"
 
 LinkList deleteValueOfX_p38q2(LinkList &L, int x){
     if (!L->next){
@@ -265,16 +266,304 @@ LinkList mergeIntoDescending_p39q13(LinkList L1, LinkList L2){
     return L1;
 }
 
+LinkList getCommonElem_p39q14(LinkList L1, LinkList L2){
+    LinkList L;
+    InitList(L);
+    LNode *a = L1->next, *b = L2->next, *cur = L;
+    while (a && b){
+        if (a->data < b->data){
+            a = a->next;
+        }else if (a->data > b->data){
+            b = b->next;
+        }else{
+            cur->next = a;
+            cur = cur->next;
+            a = a->next;
+            b = b->next;
+        }
+    }
+    cur->next = NULL;
+    return L;
+}
+
+LinkList getCommonElem_p39q15(SeqList L1, SeqList L2){
+    LinkList L;
+    InitList(L);
+    LNode *cur = L;
+    int i = 0, j = 0;
+    while (i < L1.length && j < L2.length){
+        if (L1.data[i] < L2.data[j]){
+            i++;
+        }else if (L1.data[i] > L2.data[j]){
+            j++;
+        }else{
+            LNode *s = (LNode*)malloc(sizeof(LNode));
+            s->data = L1.data[i];
+            cur->next = s;
+            cur = cur->next;
+            i++;
+            j++;
+        }
+    }
+    cur->next = NULL;
+    return L;
+}
+
+bool isSubLinkList_q39q16(LinkList L1, LinkList L2){
+    if (!L2->next)
+        return false;
+    LNode *a = L1->next, *b = L2->next;
+    LNode *cur1 = L1->next, *cur2 = L2->next;
+    while(a){
+        if (a->data == b->data){
+            cur1 = a, cur2 = b;
+            while (cur1 && cur2 && cur1->data == cur2->data){
+                cur1 = cur1->next;
+                cur2 = cur2->next;
+            }
+            if (!cur2){ // 子串正常遍历到NULL，则为子串
+                return true;
+            }
+        }else{
+            a = a->next;
+        }
+    }
+    return false;
+}
+
+LinkList connectCLinkList_p39q18(LinkList L1, LinkList L2){
+    LinkList L = L1;
+    LNode *cur1 = L1, *cur2 = L2;
+    while (cur1->next != L1){
+        cur1 = cur1->next;
+    }
+    cur1->next = L2->next;
+    while (cur2->next != L2){
+        cur2 = cur2->next;
+    }
+    cur2->next = L1;
+    return L;
+}
+
+void printAndFreeCLinkList_p39q19(LinkList &L){
+    if (L->next == L)
+        return;
+    LNode *min, *pre, *cur, *curPre;
+    while (L->next != L){
+        cur = L->next, curPre = L;
+        min = cur, pre = curPre;
+        while (cur != L){
+            if (cur->data < min->data){
+                min = cur;
+                pre = curPre;
+            }
+            curPre = curPre->next;
+            cur = cur->next;
+        }
+        printf("%d->", min->data);
+        pre->next = pre->next->next;
+        free(min);
+    }
+    printf("NULL\n");
+    free(L);
+}
+
+int findLastKthElem_p39q21(LinkList list, int k){
+    /**
+     * 1)算法基本设计思想:使用快慢指针，快指针和慢指针的差值为k，两者同时向后遍历，当快指针指向表尾NULL时，慢指针指向的是倒数第k个元素
+     * 2)算法详细实现步骤:将慢指针初始化指向表头结点，快指针初始化遍历k次指向第k个结点，若快指针初始化过程中变为NULL，则k值不合要求，返回0
+     *   同时向后进行遍历，当快指针为NULL时，打印慢指针的值并返回1
+     */
+    LNode *slow = list, *fast = list; // 初始化慢指针
+    while (k--){ // 初始化快指针
+        if (fast){
+            fast = fast->next;
+        }
+    }
+    if (fast == NULL) // 如果快指针为NULL，则k值不合理，返回0
+        return 0;
+    while (fast != NULL){ // 快慢指针同时向后遍历，直到快指针为NULL
+        fast = fast->next;
+        slow = slow->next;
+    }
+    printf("%d\n", slow->data); // 此时输出慢指针的值为倒数第k个值
+    return 1;
+}
+
+void delAllAbsParityElem_p39q23(LinkList &L, int n){
+    if (!L->next)
+        return;
+    int *p = (int*)malloc(sizeof(int) * (n+1));
+    for (int i = 0; i < n + 1; ++i) {
+        p[i] = 0;
+    }
+    LNode *cur = L, *r;
+    while (cur->next){
+        int m = abs(cur->next->data);
+        if (p[m] == 0){
+            p[m] = 1;
+            cur = cur->next;
+        }else{
+            r = cur->next;
+            cur->next = r->next;
+            free(r);
+        }
+    }
+    free(p);
+}
+
+LinkList returnLoop_p39q24(LinkList L){
+    if (!L->next){
+        return NULL;
+    }
+    LNode *slow = L, *fast = L;
+    while (slow != NULL || fast->next != NULL){
+        slow = slow->next;
+        fast = fast->next->next;
+        if (slow == fast){
+            break;
+        }
+    }
+    if (slow == NULL || fast->next == NULL)
+        return NULL;
+    LNode *p1 = L, *p2 = slow;
+    while (p1 != p2){
+        p1 = p1->next;
+        p2 = p2->next;
+    }
+    return p1;
+}
+
+LinkList p39q25(LinkList L){
+    LNode *slow = L, *fast = L;
+    while (fast){
+        if (fast->next){
+            fast = fast->next->next;
+        }else{
+            fast = fast->next;
+        }
+        slow = slow->next; // 获取中点slow
+    }
+    LNode *mid = slow, *nex = slow->next;
+    while (nex){
+        LNode *nnex = nex->next;
+        nex->next = slow;
+        slow = nex;
+        nex = nnex;
+    }
+    mid->next = NULL;
+    int flag = 1;
+    LNode *left = L->next, *right = slow, *cur = L;
+    while (left && right){
+        if (flag){
+            cur->next = left;
+            cur = cur->next;
+            left = left->next;
+            flag = 0;
+        }else{
+            cur->next = right;
+            cur = cur->next;
+            right = right->next;
+            flag = 1;
+        }
+    }
+    return L;
+}
+
 int main() {
     LinkList L;
     InitList(L);
     ListInsert(L, 1, 1);
-    ListInsert(L, 2, 3);
-    ListInsert(L, 3, 4);
-    ListInsert(L, 4, 5);
-    ListInsert(L, 5, 7);
-    ListInsert(L, 6, 8);
+    ListInsert(L, 2, 2);
+    ListInsert(L, 3, 3);
+    ListInsert(L, 4, 4);
+    ListInsert(L, 5, 5);
+    ListInsert(L, 6, 6);
+    ListInsert(L, 7, 7);
+    ListInsert(L, 8, 8);
+    ListInsert(L, 9, 9);
+    ListInsert(L, 10, 10);
+    ListInsert(L, 11, 11);
     ShowList(L);
+    L = p39q25(L);
+    ShowList(L);
+
+    /// delAllAbsParityElem 调试
+//    delAllAbsParityElem_p39q23(L, 21);
+//    ShowList(L);
+
+    /// findLastKthElem 调试
+//    printf("%d", findLastKthElem_p39q21(L, 1));
+
+    /// printAndFreeCLinkList 调试
+//    L = toCircleLinkList(L);
+//    printAndFreeCLinkList_p39q19(L);
+
+    /// connectCLinkList 调试
+//    L = toCircleLinkList(L);
+//    LinkList L2;
+//    InitList(L2);
+//    ListInsert(L2, 1, 1);
+//    ListInsert(L2, 2, 3);
+//    ListInsert(L2, 3, 4);
+//    ListInsert(L2, 4, 5);
+//    ListInsert(L2, 5, 7);
+//    ListInsert(L2, 6, 8);
+//    ShowList(L2);
+//    L2 = toCircleLinkList(L2);
+//    LinkList L3 = connectCLinkList_p39q18(L, L2);
+//    ShowCList(L3);
+
+
+    /// isSubLinkList 调试
+//    LinkList L2;
+//    InitList(L2);
+//    ListInsert(L2, 1, 1);
+//    ListInsert(L2, 2, 3);
+//    ListInsert(L2, 3, 4);
+//    ListInsert(L2, 4, 5);
+//    ListInsert(L2, 5, 7);
+//    ShowList(L2);
+//
+//    printf("%d",isSubLinkList_q39q16(L, L2));
+
+    /// getCommonElem 数组 调试
+//    SeqList L1;
+//    InitList(L1);
+//    ListInsert(L1, 1, 1);
+//    ListInsert(L1, 2, 3);
+//    ListInsert(L1, 3, 4);
+//    ListInsert(L1, 4, 7);
+//    ListInsert(L1, 5, 9);
+//    ListInsert(L1, 6, 10);
+//    ShowList(L1);
+//
+//    SeqList L2;
+//    InitList(L2);
+//    ListInsert(L2, 1, 1);
+//    ListInsert(L2, 2, 2);
+//    ListInsert(L2, 3, 4);
+//    ListInsert(L2, 4, 6);
+//    ListInsert(L2, 5, 7);
+//    ListInsert(L2, 6, 10);
+//    ShowList(L2);
+//
+//    LinkList L3 = getCommonElem_p39q15(L1, L2);
+//    ShowList(L3);
+
+    /// getCommonElem 调试
+//    LinkList  L2;
+//    InitList(L2);
+//    ListInsert(L2, 1, 1);
+//    ListInsert(L2, 2, 4);
+//    ListInsert(L2, 3, 6);
+//    ListInsert(L2, 4, 8);
+//    ListInsert(L2, 5, 9);
+//    ListInsert(L2, 6, 10);
+//    ShowList(L2);
+//
+//    LinkList L3 = getCommonElem_p39q14(L, L2);
+//    ShowList(L3);
 
     /// mergeIntoDescending 调试
 //    LinkList L2;
@@ -288,7 +577,6 @@ int main() {
 //    ShowList(L2);
 //    L = mergeIntoDescending_p39q13(L, L2);
 //    ShowList(L);
-
 
     /// deleteRepeatedElem 调试
 //    deleteRepeatedElem_p39q12(L);
