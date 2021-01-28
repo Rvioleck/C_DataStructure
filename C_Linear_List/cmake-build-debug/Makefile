@@ -142,32 +142,32 @@ C_Linear_List/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/build
 .PHONY : C_Linear_List/fast
 
-LinkListWithHeadWorks.obj: LinkListWithHeadWorks.cpp.obj
+kmp.obj: kmp.cpp.obj
 
-.PHONY : LinkListWithHeadWorks.obj
+.PHONY : kmp.obj
 
 # target to build an object file
-LinkListWithHeadWorks.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.obj
-.PHONY : LinkListWithHeadWorks.cpp.obj
+kmp.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/kmp.cpp.obj
+.PHONY : kmp.cpp.obj
 
-LinkListWithHeadWorks.i: LinkListWithHeadWorks.cpp.i
+kmp.i: kmp.cpp.i
 
-.PHONY : LinkListWithHeadWorks.i
+.PHONY : kmp.i
 
 # target to preprocess a source file
-LinkListWithHeadWorks.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.i
-.PHONY : LinkListWithHeadWorks.cpp.i
+kmp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/kmp.cpp.i
+.PHONY : kmp.cpp.i
 
-LinkListWithHeadWorks.s: LinkListWithHeadWorks.cpp.s
+kmp.s: kmp.cpp.s
 
-.PHONY : LinkListWithHeadWorks.s
+.PHONY : kmp.s
 
 # target to generate assembly for a file
-LinkListWithHeadWorks.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.s
-.PHONY : LinkListWithHeadWorks.cpp.s
+kmp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/kmp.cpp.s
+.PHONY : kmp.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C_Linear_List
-	@echo ... LinkListWithHeadWorks.obj
-	@echo ... LinkListWithHeadWorks.i
-	@echo ... LinkListWithHeadWorks.s
+	@echo ... kmp.obj
+	@echo ... kmp.i
+	@echo ... kmp.s
 .PHONY : help
 
 

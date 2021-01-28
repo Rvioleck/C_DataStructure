@@ -1,5 +1,6 @@
 #include "LinkListWithHead.h"
 #include "SequenceListStaticAlloc.h"
+#include "SequenceStack.h"
 
 LinkList deleteValueOfX_p38q2(LinkList &L, int x){
     if (!L->next){
@@ -468,6 +469,27 @@ LinkList p39q25(LinkList L){
         }
     }
     return L;
+}
+
+bool isCentral_p66q4(LinkList L, int n){
+    int i;
+    char s[n/2];
+    LNode *p = L->next;
+    for (i = 0; i < n/2; ++i) {
+        s[i] = p->data;
+        p = p->next;
+    }
+    i--;
+    if (n%2){
+        p = p->next;
+    }
+    while (p && s[i--] == p->data){
+        p = p->next;
+    }
+    if (i == -1)
+        return true;
+    else
+        return false;
 }
 
 int main() {

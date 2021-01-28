@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.obj"
+  "CMakeFiles/C_Linear_List.dir/kmp.cpp.obj"
   "C_Linear_List.exe"
   "C_Linear_List.exe.manifest"
   "C_Linear_List.pdb"

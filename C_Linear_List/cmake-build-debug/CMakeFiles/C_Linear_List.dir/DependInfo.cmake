@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/DataStructure/DataStructure/C_Linear_List/LinkListWithHeadWorks.cpp" "D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/CMakeFiles/C_Linear_List.dir/LinkListWithHeadWorks.cpp.obj"
+  "D:/DataStructure/DataStructure/C_Linear_List/kmp.cpp" "D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/CMakeFiles/C_Linear_List.dir/kmp.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
