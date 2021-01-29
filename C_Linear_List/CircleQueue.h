@@ -42,6 +42,10 @@ bool DeQueue(CQueue &Q, ElemType &x){
     return true;
 }
 
+bool IsEmpty(CQueue Q){
+    return Q.front == Q.rear && Q.tag == 0;
+}
+
 void ShowQueue(CQueue Q){
     if (Q.tag == 1 && Q.front == Q.rear){
         int i = Q.front;

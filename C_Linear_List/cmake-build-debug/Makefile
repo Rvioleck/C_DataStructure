@@ -142,32 +142,32 @@ C_Linear_List/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/build
 .PHONY : C_Linear_List/fast
 
-kmp.obj: kmp.cpp.obj
+CircleQueue.obj: CircleQueue.cpp.obj
 
-.PHONY : kmp.obj
+.PHONY : CircleQueue.obj
 
 # target to build an object file
-kmp.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/kmp.cpp.obj
-.PHONY : kmp.cpp.obj
+CircleQueue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj
+.PHONY : CircleQueue.cpp.obj
 
-kmp.i: kmp.cpp.i
+CircleQueue.i: CircleQueue.cpp.i
 
-.PHONY : kmp.i
+.PHONY : CircleQueue.i
 
 # target to preprocess a source file
-kmp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/kmp.cpp.i
-.PHONY : kmp.cpp.i
+CircleQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.i
+.PHONY : CircleQueue.cpp.i
 
-kmp.s: kmp.cpp.s
+CircleQueue.s: CircleQueue.cpp.s
 
-.PHONY : kmp.s
+.PHONY : CircleQueue.s
 
 # target to generate assembly for a file
-kmp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/kmp.cpp.s
-.PHONY : kmp.cpp.s
+CircleQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.s
+.PHONY : CircleQueue.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C_Linear_List
-	@echo ... kmp.obj
-	@echo ... kmp.i
-	@echo ... kmp.s
+	@echo ... CircleQueue.obj
+	@echo ... CircleQueue.i
+	@echo ... CircleQueue.s
 .PHONY : help
 
 

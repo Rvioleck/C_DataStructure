@@ -39,8 +39,8 @@ bool Pop(LinkStack &S, ElemType &x){
     return true;
 }
 
-void Show(LinkStack &S){
-    if (S->next){
+void Show(LinkStack S){
+    if (S && S->next){
         Show(S->next);
     }
     if (S){
@@ -48,12 +48,15 @@ void Show(LinkStack &S){
     }
 }
 
-void ShowStack(LinkStack &S){
+void ShowStack(LinkStack S){
     S = S->next;
     printf("From the bottom to the top: ");
     Show(S);
     printf("NULL\n");
 }
 
+bool IsEmpty(LinkStack S){
+    return S->next == nullptr;
+}
 
 #endif //C_LINEAR_LIST_LINKSTACK_H

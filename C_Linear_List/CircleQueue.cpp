@@ -10,4 +10,5 @@ int main(){
     CQueue q;
     InitQueue(q);
     ShowQueue(q);
+    printf("%d", IsEmpty(q));
 }

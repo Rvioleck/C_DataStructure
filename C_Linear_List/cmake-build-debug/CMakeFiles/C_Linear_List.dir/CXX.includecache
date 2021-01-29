@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/DataStructure/DataStructure/C_Linear_List/kmp.cpp
-kmp.h
-D:/DataStructure/DataStructure/C_Linear_List/kmp.h
+D:/DataStructure/DataStructure/C_Linear_List/CircleQueue.cpp
+CircleQueue.h
+D:/DataStructure/DataStructure/C_Linear_List/CircleQueue.h
 
-D:/DataStructure/DataStructure/C_Linear_List/kmp.h
-string.h
--
-cstdlib
--
-iostream
--
+D:/DataStructure/DataStructure/C_Linear_List/CircleQueue.h
+stdio.h
+D:/DataStructure/DataStructure/C_Linear_List/stdio.h
+stdlib.h
+D:/DataStructure/DataStructure/C_Linear_List/stdlib.h
 
