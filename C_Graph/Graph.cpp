@@ -23,7 +23,25 @@ int NextNeighbor(MGraph G, int v, int w){
     return -1;
 }
 
-//<editor-fold desc="BFS广度优先遍历">
+int FirstNeighbor(ALGraph G, int v){
+    if (G.vertexes[v].first){
+        return G.vertexes[v].first->adjVex;
+    }
+    return -1;
+}
+
+int NextNeighbor(ALGraph G, int v, int w){
+    ArcNode *first = G.vertexes[v].first;
+    while (first->adjVex != w){
+        first = first->next;
+    }
+    if (first->next != nullptr){
+        return first->next->adjVex;
+    }
+    return -1;
+}
+
+//<editor-fold desc="BFS广度优先遍历(邻接矩阵和邻接表实现)">
 void BFS(MGraph G, int v, bool visited[]){
     /// 从下标为v的顶点出发，广度优先遍历图G
     cout<<G.Vex[v]<<" ";     // 访问初始顶点v
@@ -56,6 +74,39 @@ void BFSTraverse(MGraph G){
     }
     cout<<endl;
 }
+
+void BFS(ALGraph G, int v, bool visited[]){
+    cout<<G.vertexes[v].data<<" ";
+    visited[v] = true;
+    CQueue Q;
+    InitQueue(Q);
+    EnQueue(Q, v);
+    while (!IsEmpty(Q)){
+        DeQueue(Q, v);
+        for (int w = FirstNeighbor(G, v); w >= 0 ; w = NextNeighbor(G, v, w)) {
+            if (!visited[w]){
+                cout<<G.vertexes[w].data<<" ";
+                visited[w] = true;
+                EnQueue(Q, w);
+            }
+        }
+    }
+}
+
+void BFSTraverse(ALGraph G){
+    bool visited[G.vexNum];
+    for (int i = 0; i < G.vexNum; ++i) {
+        visited[i] = false;
+    }
+    cout<<"BFS: ";
+    for (int i = 0; i < G.vexNum; ++i) {
+        if (!visited[i]){
+            BFS(G, i, visited);
+        }
+    }
+    cout<<endl;
+}
+
 //</editor-fold>
 
 //<editor-fold desc="DFS深度优先遍历">
@@ -82,9 +133,9 @@ void DFS_iterate(MGraph G, int v, bool visited[]){
         if (!visited[v]){
             cout<<G.Vex[v]<<" ";     // 访问初始顶点v
             visited[v] = true;
-            if (!IsEmpty(S))
-                Pop(S, v);
         }
+        if (!IsEmpty(S))
+            Pop(S, v);
     }
 }
 
@@ -102,6 +153,30 @@ void DFSTraverse(MGraph G){
     cout<<endl;
 }
 //</editor-fold>
+
+void DFS(ALGraph G, int v, bool visited[]){
+    cout<<G.vertexes[v].data<<" ";
+    visited[v] = true;
+    for (int w = FirstNeighbor(G, v); w >= 0; w = NextNeighbor(G, v, w)) {
+        if (!visited[w]){
+            DFS(G, w, visited);
+        }
+    }
+}
+
+void DFSTraverse(ALGraph G){
+    bool visited[G.vexNum];
+    for (int i = 0; i < G.vexNum; ++i) {
+        visited[i] = false;
+    }
+    cout<<"DFS: ";
+    for (int i = 0; i < G.vexNum; ++i) {
+        if (!visited[i]){
+            DFS(G, i, visited);
+        }
+    }
+    cout<<endl;
+}
 
 //<editor-fold desc="判断图是否为树">
 void isTreeDFS(MGraph G, int v, bool visited[], int &vNum, int &aNum){
@@ -139,5 +214,6 @@ int main(){
 
     ALGraph G1;
     CreateGraph(G1, false);
-
+//    BFSTraverse(G1);
+    DFSTraverse(G1);
 }

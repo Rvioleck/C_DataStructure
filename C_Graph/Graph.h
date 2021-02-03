@@ -136,7 +136,7 @@ int createArc(ALGraph &G, VertexType head, VertexType tail, bool isDG){
             G.vertexes[tailIndex].first = arc;
         } else {
             arc->next = G.vertexes[tailIndex].first->next;
-            G.vertexes[headIndex].first->next = arc;
+            G.vertexes[tailIndex].first->next = arc;
         }
     }
     return true;
