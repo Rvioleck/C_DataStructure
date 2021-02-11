@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj"
+  "CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.obj"
+  "CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.obj"
+  "CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.obj"
+  "CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.obj"
   "C_Linear_List.exe"
   "C_Linear_List.exe.manifest"
   "C_Linear_List.pdb"

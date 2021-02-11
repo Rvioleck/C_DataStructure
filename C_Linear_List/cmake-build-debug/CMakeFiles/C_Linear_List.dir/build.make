@@ -76,32 +76,77 @@ include CMakeFiles/C_Linear_List.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C_Linear_List.dir/flags.make
 
-CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj: CMakeFiles/C_Linear_List.dir/flags.make
-CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj: ../CircleQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\DataStructure\DataStructure\C_Linear_List\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj"
-	D:\mingw-w64\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\C_Linear_List.dir\CircleQueue.cpp.obj -c D:\DataStructure\DataStructure\C_Linear_List\CircleQueue.cpp
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.obj: CMakeFiles/C_Linear_List.dir/flags.make
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.obj: ../LeetCodeDataStructure/removeDuplicateNodes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\DataStructure\DataStructure\C_Linear_List\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.obj"
+	D:\mingw-w64\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\removeDuplicateNodes.cpp.obj -c D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\removeDuplicateNodes.cpp
 
-CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.i"
-	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\DataStructure\DataStructure\C_Linear_List\CircleQueue.cpp > CMakeFiles\C_Linear_List.dir\CircleQueue.cpp.i
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.i"
+	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\removeDuplicateNodes.cpp > CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\removeDuplicateNodes.cpp.i
 
-CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.s"
-	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\DataStructure\DataStructure\C_Linear_List\CircleQueue.cpp -o CMakeFiles\C_Linear_List.dir\CircleQueue.cpp.s
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.s"
+	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\removeDuplicateNodes.cpp -o CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\removeDuplicateNodes.cpp.s
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.obj: CMakeFiles/C_Linear_List.dir/flags.make
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.obj: ../LeetCodeDataStructure/removeElements.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\DataStructure\DataStructure\C_Linear_List\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.obj"
+	D:\mingw-w64\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\removeElements.cpp.obj -c D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\removeElements.cpp
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.i"
+	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\removeElements.cpp > CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\removeElements.cpp.i
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.s"
+	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\removeElements.cpp -o CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\removeElements.cpp.s
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.obj: CMakeFiles/C_Linear_List.dir/flags.make
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.obj: ../LeetCodeDataStructure/sortedListToBST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\DataStructure\DataStructure\C_Linear_List\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.obj"
+	D:\mingw-w64\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\sortedListToBST.cpp.obj -c D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\sortedListToBST.cpp
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.i"
+	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\sortedListToBST.cpp > CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\sortedListToBST.cpp.i
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.s"
+	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\sortedListToBST.cpp -o CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\sortedListToBST.cpp.s
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.obj: CMakeFiles/C_Linear_List.dir/flags.make
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.obj: ../LeetCodeDataStructure/convertBiNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\DataStructure\DataStructure\C_Linear_List\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.obj"
+	D:\mingw-w64\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\convertBiNode.cpp.obj -c D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\convertBiNode.cpp
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.i"
+	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\convertBiNode.cpp > CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\convertBiNode.cpp.i
+
+CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.s"
+	D:\mingw-w64\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\DataStructure\DataStructure\C_Linear_List\LeetCodeDataStructure\convertBiNode.cpp -o CMakeFiles\C_Linear_List.dir\LeetCodeDataStructure\convertBiNode.cpp.s
 
 # Object files for target C_Linear_List
 C_Linear_List_OBJECTS = \
-"CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj"
+"CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.obj" \
+"CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.obj" \
+"CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.obj" \
+"CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.obj"
 
 # External object files for target C_Linear_List
 C_Linear_List_EXTERNAL_OBJECTS =
 
-C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj
+C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.obj
+C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.obj
+C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.obj
+C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.obj
 C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/build.make
 C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/linklibs.rsp
 C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/objects1.rsp
 C_Linear_List.exe: CMakeFiles/C_Linear_List.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\DataStructure\DataStructure\C_Linear_List\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C_Linear_List.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\DataStructure\DataStructure\C_Linear_List\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable C_Linear_List.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C_Linear_List.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

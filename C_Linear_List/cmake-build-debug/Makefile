@@ -142,32 +142,113 @@ C_Linear_List/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/build
 .PHONY : C_Linear_List/fast
 
-CircleQueue.obj: CircleQueue.cpp.obj
+LeetCodeDataStructure/convertBiNode.obj: LeetCodeDataStructure/convertBiNode.cpp.obj
 
-.PHONY : CircleQueue.obj
+.PHONY : LeetCodeDataStructure/convertBiNode.obj
 
 # target to build an object file
-CircleQueue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj
-.PHONY : CircleQueue.cpp.obj
+LeetCodeDataStructure/convertBiNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.obj
+.PHONY : LeetCodeDataStructure/convertBiNode.cpp.obj
 
-CircleQueue.i: CircleQueue.cpp.i
+LeetCodeDataStructure/convertBiNode.i: LeetCodeDataStructure/convertBiNode.cpp.i
 
-.PHONY : CircleQueue.i
+.PHONY : LeetCodeDataStructure/convertBiNode.i
 
 # target to preprocess a source file
-CircleQueue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.i
-.PHONY : CircleQueue.cpp.i
+LeetCodeDataStructure/convertBiNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.i
+.PHONY : LeetCodeDataStructure/convertBiNode.cpp.i
 
-CircleQueue.s: CircleQueue.cpp.s
+LeetCodeDataStructure/convertBiNode.s: LeetCodeDataStructure/convertBiNode.cpp.s
 
-.PHONY : CircleQueue.s
+.PHONY : LeetCodeDataStructure/convertBiNode.s
 
 # target to generate assembly for a file
-CircleQueue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.s
-.PHONY : CircleQueue.cpp.s
+LeetCodeDataStructure/convertBiNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.s
+.PHONY : LeetCodeDataStructure/convertBiNode.cpp.s
+
+LeetCodeDataStructure/removeDuplicateNodes.obj: LeetCodeDataStructure/removeDuplicateNodes.cpp.obj
+
+.PHONY : LeetCodeDataStructure/removeDuplicateNodes.obj
+
+# target to build an object file
+LeetCodeDataStructure/removeDuplicateNodes.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.obj
+.PHONY : LeetCodeDataStructure/removeDuplicateNodes.cpp.obj
+
+LeetCodeDataStructure/removeDuplicateNodes.i: LeetCodeDataStructure/removeDuplicateNodes.cpp.i
+
+.PHONY : LeetCodeDataStructure/removeDuplicateNodes.i
+
+# target to preprocess a source file
+LeetCodeDataStructure/removeDuplicateNodes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.i
+.PHONY : LeetCodeDataStructure/removeDuplicateNodes.cpp.i
+
+LeetCodeDataStructure/removeDuplicateNodes.s: LeetCodeDataStructure/removeDuplicateNodes.cpp.s
+
+.PHONY : LeetCodeDataStructure/removeDuplicateNodes.s
+
+# target to generate assembly for a file
+LeetCodeDataStructure/removeDuplicateNodes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.s
+.PHONY : LeetCodeDataStructure/removeDuplicateNodes.cpp.s
+
+LeetCodeDataStructure/removeElements.obj: LeetCodeDataStructure/removeElements.cpp.obj
+
+.PHONY : LeetCodeDataStructure/removeElements.obj
+
+# target to build an object file
+LeetCodeDataStructure/removeElements.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.obj
+.PHONY : LeetCodeDataStructure/removeElements.cpp.obj
+
+LeetCodeDataStructure/removeElements.i: LeetCodeDataStructure/removeElements.cpp.i
+
+.PHONY : LeetCodeDataStructure/removeElements.i
+
+# target to preprocess a source file
+LeetCodeDataStructure/removeElements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.i
+.PHONY : LeetCodeDataStructure/removeElements.cpp.i
+
+LeetCodeDataStructure/removeElements.s: LeetCodeDataStructure/removeElements.cpp.s
+
+.PHONY : LeetCodeDataStructure/removeElements.s
+
+# target to generate assembly for a file
+LeetCodeDataStructure/removeElements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.s
+.PHONY : LeetCodeDataStructure/removeElements.cpp.s
+
+LeetCodeDataStructure/sortedListToBST.obj: LeetCodeDataStructure/sortedListToBST.cpp.obj
+
+.PHONY : LeetCodeDataStructure/sortedListToBST.obj
+
+# target to build an object file
+LeetCodeDataStructure/sortedListToBST.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.obj
+.PHONY : LeetCodeDataStructure/sortedListToBST.cpp.obj
+
+LeetCodeDataStructure/sortedListToBST.i: LeetCodeDataStructure/sortedListToBST.cpp.i
+
+.PHONY : LeetCodeDataStructure/sortedListToBST.i
+
+# target to preprocess a source file
+LeetCodeDataStructure/sortedListToBST.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.i
+.PHONY : LeetCodeDataStructure/sortedListToBST.cpp.i
+
+LeetCodeDataStructure/sortedListToBST.s: LeetCodeDataStructure/sortedListToBST.cpp.s
+
+.PHONY : LeetCodeDataStructure/sortedListToBST.s
+
+# target to generate assembly for a file
+LeetCodeDataStructure/sortedListToBST.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C_Linear_List.dir\build.make CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.s
+.PHONY : LeetCodeDataStructure/sortedListToBST.cpp.s
 
 # Help Target
 help:
@@ -178,9 +259,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C_Linear_List
-	@echo ... CircleQueue.obj
-	@echo ... CircleQueue.i
-	@echo ... CircleQueue.s
+	@echo ... LeetCodeDataStructure/convertBiNode.obj
+	@echo ... LeetCodeDataStructure/convertBiNode.i
+	@echo ... LeetCodeDataStructure/convertBiNode.s
+	@echo ... LeetCodeDataStructure/removeDuplicateNodes.obj
+	@echo ... LeetCodeDataStructure/removeDuplicateNodes.i
+	@echo ... LeetCodeDataStructure/removeDuplicateNodes.s
+	@echo ... LeetCodeDataStructure/removeElements.obj
+	@echo ... LeetCodeDataStructure/removeElements.i
+	@echo ... LeetCodeDataStructure/removeElements.s
+	@echo ... LeetCodeDataStructure/sortedListToBST.obj
+	@echo ... LeetCodeDataStructure/sortedListToBST.i
+	@echo ... LeetCodeDataStructure/sortedListToBST.s
 .PHONY : help
 
 

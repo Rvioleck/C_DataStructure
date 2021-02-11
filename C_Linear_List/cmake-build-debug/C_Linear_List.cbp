@@ -80,10 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/CircleQueue.cpp">
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LeetCodeDataStructure/convertBiNode.cpp">
 			<Option target="C_Linear_List"/>
 		</Unit>
-		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/CircleQueue.h">
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LeetCodeDataStructure/removeDuplicateNodes.cpp">
+			<Option target="C_Linear_List"/>
+		</Unit>
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LeetCodeDataStructure/removeElements.cpp">
+			<Option target="C_Linear_List"/>
+		</Unit>
+		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/LeetCodeDataStructure/sortedListToBST.cpp">
 			<Option target="C_Linear_List"/>
 		</Unit>
 		<Unit filename="D:/DataStructure/DataStructure/C_Linear_List/CMakeLists.txt">

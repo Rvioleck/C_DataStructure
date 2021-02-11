@@ -9,10 +9,12 @@
 using namespace std;
 
 #define MaxVertexNum 100
+#define MaxInt 0x7fffffff
 typedef char VertexType;
 typedef int EdgeType;
 typedef int QueueType;
 typedef int StackType;
+
 
 //<editor-fold desc="邻接矩阵表示图">
 typedef struct {
@@ -24,9 +26,9 @@ typedef struct {
 
 void InitGraph(MGraph &G){
     for (int i = 0; i < MaxVertexNum; ++i) {
-        G.Vex[i] = 0;
+        G.Vex[i] = '#';
         for (int j = 0; j < MaxVertexNum; ++j) {
-            G.Edge[i][j] = 0;
+            G.Edge[i][j] = MaxInt;
         }
     }
     G.vexNum = 0, G.arcNum = 0;
@@ -43,7 +45,7 @@ int getVertexIndex(MGraph G, VertexType vex){
 }
 
 void CreateGraph(MGraph &G, bool isDG){
-    /// 邻接矩阵法构造图(isDG=1为有向图，isDG=0为无向图)
+    /// 邻接矩阵法构造带权图(isDG=1为有向图，isDG=0为无向图)
     InitGraph(G);
     // 输入结点
     cout<<"Vertex: "<<endl;
@@ -58,17 +60,17 @@ void CreateGraph(MGraph &G, bool isDG){
     // 输入边(弧)
     cout<<"Arc: "<<endl;
     VertexType head, tail;
-    int headIndex, tailIndex;
-    cin>>head>>tail;
+    int headIndex, tailIndex, weight;
+    cin>>head>>tail>>weight; // weight为边权
     headIndex = getVertexIndex(G, head);
     tailIndex = getVertexIndex(G, tail);
     while (headIndex != -1 && tailIndex != -1){
-        G.Edge[headIndex][tailIndex] = 1;
+        G.Edge[headIndex][tailIndex] = weight;
         if (isDG == 0){
-            G.Edge[tailIndex][headIndex] = 1;  // 无向图
+            G.Edge[tailIndex][headIndex] = weight;  // 无向图
         }
         G.arcNum++;
-        cin>>head>>tail;
+        cin>>head>>tail>>weight;
         headIndex = getVertexIndex(G, head);
         tailIndex = getVertexIndex(G, tail);
     }
@@ -101,7 +103,7 @@ void InitGraph(ALGraph &G){
     G.arcNum = 0;
 }
 
-int createArc(ALGraph &G, VertexType head, VertexType tail, bool isDG){
+int createArc(ALGraph &G, VertexType head, VertexType tail, int weight, bool isDG){
     int headIndex = -1, tailIndex = -1;
     for (int i = 0; i < G.vexNum; ++i) {
         if (G.vertexes[i].data == head){
@@ -118,6 +120,7 @@ int createArc(ALGraph &G, VertexType head, VertexType tail, bool isDG){
     // 添加head到tail的结点
     auto* arc = (ArcNode*)malloc(sizeof(ArcNode));
     arc->adjVex = tailIndex;
+    arc->info = weight;  // 权值
     arc->next = nullptr;
     if (G.vertexes[headIndex].first == nullptr){
         G.vertexes[headIndex].first = arc;
@@ -131,6 +134,7 @@ int createArc(ALGraph &G, VertexType head, VertexType tail, bool isDG){
         // 如果是无向图，还要添加tail到head的结点
         auto* arc = (ArcNode*)malloc(sizeof(ArcNode));
         arc->adjVex = headIndex;
+        arc->info = weight;
         arc->next = nullptr;
         if (G.vertexes[tailIndex].first == nullptr){
             G.vertexes[tailIndex].first = arc;
@@ -157,13 +161,14 @@ void CreateGraph(ALGraph &G, bool isDG){
     }
     cout<<"Arc: "<<endl;
     VertexType head, tail;
-    cin>>head>>tail;
+    int weight;
+    cin>>head>>tail>>weight;
     while (head != '#' && tail != '#'){
-        int tag = createArc(G, head, tail, isDG);
+        int tag = createArc(G, head, tail, weight, isDG);
         if (tag == 0){
             cout<<"Existence arc invalid: "<<head<<" and "<<tail<<endl;
         }
-        cin>>head>>tail;
+        cin>>head>>tail>>weight;
     }
     cout<<"Successfully!"<<endl;
 }

@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/DataStructure/DataStructure/C_Linear_List/CircleQueue.cpp" "D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/CMakeFiles/C_Linear_List.dir/CircleQueue.cpp.obj"
+  "D:/DataStructure/DataStructure/C_Linear_List/LeetCodeDataStructure/convertBiNode.cpp" "D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/convertBiNode.cpp.obj"
+  "D:/DataStructure/DataStructure/C_Linear_List/LeetCodeDataStructure/removeDuplicateNodes.cpp" "D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeDuplicateNodes.cpp.obj"
+  "D:/DataStructure/DataStructure/C_Linear_List/LeetCodeDataStructure/removeElements.cpp" "D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/removeElements.cpp.obj"
+  "D:/DataStructure/DataStructure/C_Linear_List/LeetCodeDataStructure/sortedListToBST.cpp" "D:/DataStructure/DataStructure/C_Linear_List/cmake-build-debug/CMakeFiles/C_Linear_List.dir/LeetCodeDataStructure/sortedListToBST.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
